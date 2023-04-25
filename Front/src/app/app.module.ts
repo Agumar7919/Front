@@ -13,6 +13,7 @@ import { LogoapComponent } from './components/logoap/logoap.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
