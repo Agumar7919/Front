@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ButtonloginComponent } from './components/buttonlogin/buttonlogin.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
@@ -17,13 +16,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component'
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
-import { InterceptorProvider } from './service/interceptor-service';
+import { interceptorProvider } from './service/interceptor-service';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ButtonloginComponent,
+    LoginComponent,
     AcercadeComponent,
     ExperienciaComponent,
     EducacionComponent,
@@ -42,7 +42,7 @@ import { InterceptorProvider } from './service/interceptor-service';
     FormsModule,
   ],
   providers: [
-    InterceptorProvider
+    interceptorProvider
   ],
   bootstrap: [AppComponent]
 })
