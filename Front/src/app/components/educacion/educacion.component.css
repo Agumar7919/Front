@@ -7,6 +7,12 @@ div{
     color:white;
     padding: 60px;
 }
+
+table{
+  background-color: black;
+  color:white;
+}
+
 ul {
     list-style: none;
     padding: 0;
