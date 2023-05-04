@@ -18,6 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
 import { LoginComponent } from './components/login/login.component';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { LoginComponent } from './components/login/login.component';
     BannerComponent,
     FooterComponent,
     HomeComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
   ],
   imports: [
     BrowserModule,

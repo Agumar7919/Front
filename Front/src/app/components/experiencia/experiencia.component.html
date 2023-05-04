@@ -1,48 +1,31 @@
-<div class="row titulo">
-    <h3>Experiencia laboral</h3>
-</div>    
-<div class="row">    
+<div class="row">
+    <h1>Experiencia laboral</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nueva Experiencia
+        </button>
+    </div>
+
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
-        <ul>
-            <li>
-                <img src="../../../assets/ma comunicaciones.png" style="width:100px; border-radius: 100%;" alt="logo MA COMUNICACIONES">
-                <h5>Socia gerente</h5>
-                <h6>Octubre 2021 - Actualidad</h6>
-                <p>Empresa de telecomunicaciones que brinda servicios a Orange (España). Nos dedicamos a brindar atención especializada a cuentas corporativas de autónomos y PYMES.</p>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <img src="../../../assets/luxa.png" style="width:100px; border-radius: 100%;" alt="logo GRUPO LUXA">
-                <h5>Administrativa - Apoderada legal</h5>
-                <h6>Enero 2020 - Octubre 2021</h6>
-                <p>Gestión empresarial, confidencialidad y atención. Gestión de archivos y expedientes. Redacción de documentos administrativos. Atención a clientes, socios y proveedores. Representante en SECLO. Administración de recursos financieros, humanos y materiales.</p>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <img src="../../../assets/Atento.png" style="width:100px; border-radius: 100%;" alt="logo ATENTO">
-                <h5>Asesor de liquidaciones para First Data - Posnet</h5>
-                <h6>Septiembre 2018 - Diciembre 2019</h6>
-                <p>Contactación con dueños de empresas y comercios para ofrecer anticipo de liquidación. Venta en frío de intangibles por objetivo. Conocimiento de Posnet y acreditación de ventas realizadas. Cobranzas de Posnet</p>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <img src="../../../assets/Atento.png" style="width:100px; border-radius: 100%;" alt="logo ATENTO">
-                <h5>Asesora call center Wenance</h5>
-                <h6>Abril 2018 - Agosto 2018</h6>
-                <p>Venta telefónica en importante financiera. Contactacion con posibles clientes pre aprobados para la adquisición de un prestamo. Cobranzas. Verificación de cobro en fecha.</p>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <img src="../../../assets/Claro.png" style="width:100px; border-radius: 100%;" alt="logo CLARO">
-                <h5>Ejecutiva de cuentas y atención al cliente.</h5>
-                <h6>Enero 2016 - Abril 2018</h6>
-                <p>Data entry, carga y control de datos y tipificaciones. Atencion especializada a cuentas corporativas de grandes empresas de la región AMBA Norte. El objetivo de la posición es gestionar y desarrollar clientes del segmento asignado cumpliendo con los estándares y políticas de la empresa. Las funciones principales son acercamiento telefónico, visitar clientes cuando se requiera, soporte comercial, manejo de SAP y Stealth, venta de equipos (cater) y líneas nuevas y de potabilidad numérica.</p>
-            </li>
-        </ul>
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>
+                        <h2>{{Experiencia.nombreE}}</h2>
+                    </td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+
 </div>
