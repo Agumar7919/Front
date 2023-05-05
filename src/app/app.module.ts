@@ -6,7 +6,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { AcercadeComponent } from './components/acercade/acercade.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
-import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { LogoapComponent } from './components/logoap/logoap.component';
 import { BannerComponent } from './components/banner/banner.component';
@@ -22,6 +21,8 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion/neweducacion.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
+import { SkillsComponent } from './components/skills/skills.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +32,6 @@ import { EditeducacionComponent } from './components/educacion/editeducacion/edi
     AcercadeComponent,
     ExperienciaComponent,
     EducacionComponent,
-    SkillsComponent,
     ProyectosComponent,
     LogoapComponent,
     BannerComponent,
@@ -41,6 +41,7 @@ import { EditeducacionComponent } from './components/educacion/editeducacion/edi
     EditExperienciaComponent,
     NeweducacionComponent,
     EditeducacionComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
