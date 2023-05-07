@@ -26,3 +26,12 @@ ul {
     margin-right:30px;
     padding: 0;
   }
+
+  .boton {
+    background-color: #6a023f;
+    font-weight: 500;
+    color:black;
+}
+h2{
+  color:#6a023f;
+}

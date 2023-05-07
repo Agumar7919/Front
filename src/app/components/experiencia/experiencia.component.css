@@ -1,20 +1,27 @@
 div{
-    background: #6a023f;
+    background: black;
     color: white;
-    text-align: justify;
 }
 .titulo{
-    background-color: #6a023f;
+    background-color: black;
     color:white;
-    padding: 60px;
+    padding-top: 60px;
 }
-table{
-    background-color: #6a023f;
-    color:white;
 
+table{
+  background-color: black;
+  color:white;
 }
 li {
     margin-bottom: 60px;
     margin-right:30px;
     padding: 0;
+  }
+  .boton {
+    background-color: #6a023f;
+    font-weight: 500;
+    color:black;
+}
+h2{
+    color:#6a023f;
   }

@@ -31,3 +31,8 @@ div{
     }
     }
 
+.boton {
+    background-color: #6a023f;
+    font-weight: 500;
+    color:black;
+}

@@ -1,19 +1,27 @@
+div{
+  background: black;
+  color: white;
+}
 .titulo{
-  background-color: #6a023f;
+  background-color: black;
   color:white;
   padding: 60px;
 }
 
-div{
-  background: #6a023f;
-  color: white;
-}
 .row{
-  background-color: #6a023f;
+  background-color: black;
   padding-left: 20px;
 }
 .circulo{
   display:flex;
   flex-direction: column;
   align-items: center;
+}
+.boton {
+  background-color: #6a023f;
+  font-weight: 500;
+  color:black;
+}
+h2{
+  color:#6a023f;
 }
