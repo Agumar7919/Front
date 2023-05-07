@@ -10,12 +10,15 @@
                 <br>
                 <div class="form-group">
                     <label for="porcentaje">Ingresar el porcentaje</label>
-                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
+                    <input type="number" class="form-control" id="porcentaje" name="porcentaje" min="1" max="100" [(ngModel)]="skill.porcentaje" required>
                 </div>
                 <br>
-                <button class="btn btn-dark">
-                    Actualizar
-                </button>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-dark" onclick="history.back()"> Volver</button>
+                        <button class="btn btn-dark" style="margin-left:10px">Actualizar</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>

@@ -13,9 +13,12 @@
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="educacion.descripcionE" required>
                 </div>
                 <br>
-                <button class="btn btn-dark">
-                    Editar educación
-                </button>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-dark" onclick="history.back()"> Volver</button>
+                        <button class="btn btn-dark" style="margin-left:10px">Actualizar</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>

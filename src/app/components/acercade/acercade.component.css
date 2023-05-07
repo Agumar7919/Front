@@ -11,17 +11,45 @@ div{
 
 
 /*estilo de la foto de perfil*/
-@media(min-width:576px){
+@media(min-width:1600px){
 #fotoperfil{
     position: absolute;
     width: 15%;
     border-radius: 100%;
     left: 10%;
-    top: 500px;
+    top: 550px;
 }
 }
 
-@media(max-width:575px){
+@media (min-width: 1200px) and (max-width: 1599px) {
+    #fotoperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        left: 10%;
+        top: 550px;
+    }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+    #fotoperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        left: 10%;
+        top: 600px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 899px) {
+    #fotoperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        left: 10%;
+        top: 630px;
+    }
+}
+@media (min-width: 400px) and (max-width: 575px) {
     #fotoperfil{
         position: absolute;
         width: 50%;
@@ -29,10 +57,20 @@ div{
         left: 25%;
         top: 460px;
     }
+}
+
+@media(max-width:399px){
+    #fotoperfil{
+        position: absolute;
+        width: 50%;
+        border-radius: 100%;
+        left: 25%;
+        top: 500px;
+    }
     }
 
 .boton {
-    background-color: #6a023f;
+    background-color: #c30072;
     font-weight: 500;
     color:black;
 }
