@@ -17,7 +17,7 @@ div{
     width: 15%;
     border-radius: 100%;
     left: 10%;
-    top: 550px;
+    top: 500px;
 }
 }
 
@@ -27,7 +27,7 @@ div{
         width: 15%;
         border-radius: 100%;
         left: 10%;
-        top: 550px;
+        top: 520px;
     }
 }
 @media (min-width: 900px) and (max-width: 1199px) {
@@ -36,7 +36,7 @@ div{
         width: 15%;
         border-radius: 100%;
         left: 10%;
-        top: 600px;
+        top: 570px;
     }
 }
 
@@ -46,7 +46,7 @@ div{
         width: 15%;
         border-radius: 100%;
         left: 10%;
-        top: 630px;
+        top: 600px;
     }
 }
 @media (min-width: 400px) and (max-width: 575px) {
@@ -55,7 +55,7 @@ div{
         width: 50%;
         border-radius: 100%;
         left: 25%;
-        top: 460px;
+        top: 430px;
     }
 }
 
@@ -65,7 +65,7 @@ div{
         width: 50%;
         border-radius: 100%;
         left: 25%;
-        top: 500px;
+        top: 470px;
     }
     }
 
